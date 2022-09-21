@@ -3,6 +3,7 @@
 A simple admin dashboard created with HTML, CSS. 
 
 ***WORK IN PROGRESS***
+
 Live Demo 👉 *[Lifestyle Dashboard](http://joycehwchan.github.io/AdminDashboard/)*
 
 ### What I learned
