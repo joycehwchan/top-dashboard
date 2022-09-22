@@ -1,6 +1,6 @@
-# Lifestyle Dashboard
+# Dashboard
 
-A simple admin dashboard created with HTML, CSS. 
+A simple dashboard created with HTML and CSS. 
 
 ***WORK IN PROGRESS*** 
 
