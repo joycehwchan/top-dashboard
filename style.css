@@ -135,7 +135,7 @@ footer {
   grid-area: sleep;
 }
 
-.monitor > .card-icon {
+.monitor .card-icon {
   font-size: 1.2rem;
   color: green;
   background-color: #A1FFCE;
@@ -155,12 +155,12 @@ footer {
   gap: .5rem;
 }
 
-.monitor-body > .card-title {
+.monitor-body .card-title {
   font-size: .8rem;
   font-weight: 800;
 }
 
-.monitor-body > .monitor-number {
+.monitor-body .monitor-number {
   font-size: 2rem;
   font-weight: 200;
   white-space: nowrap;
