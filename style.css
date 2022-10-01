@@ -2,12 +2,16 @@
   --main-padding: 12px;
   --main-radius: 24px;
   --card-radius: 12px;
+  --button-radius: 8px;
   --card-min-width: 10rem;
   --main-green: #A1FFCE;
+  --main-dark-green: #1ca15d;
+  --main-light-green: #d2ffe8;
 }
 
 body {
   background-color: white;
+  color: rgb(33, 49, 39);
 }
 
 .container {
@@ -35,13 +39,53 @@ nav {
   grid-area: sidebar;
 }
 
+.sidebar .divider {
+  border: 0;
+  margin: 0;
+  border-top: 2px solid rgb(234, 234, 234);
+  border-radius: 2px;
+  margin: 1.6rem;
+}
+
+.sidebar-section-title {
+  font-size: .8rem;
+  letter-spacing: .08rem;
+  text-transform: uppercase;
+  margin: 1.2rem 0 .4rem;
+}
+
+.sidebar-nav-container {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  align-items: flex-start;
+  padding: 0 1.2rem 0;
+  font-size: 1.2rem;
+
+}
+.siderbar-nav {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.siderbar-nav i {
+  padding-right: .25rem;
+  font-size: 1.25rem;
+  height: 1rem;
+  width: 1.25rem;
+}
+
+.siderbar-nav:hover {
+  color: var(--main-dark-green);
+}
+
 .menu-icon{
   display: none;
 }
 
 .user-img {
   border-radius: 50%;
-  width: 10rem;
+  width: 8rem;
   border: 4px solid var(--main-green);
 }
 
@@ -152,8 +196,8 @@ footer {
 
 .monitor .card-icon {
   font-size: 1.2rem;
-  color: green;
-  background-color: var(--main-green);
+  color: var(--main-dark-green);
+  background-color: var(--main-light-green);
   padding: 1rem;
   border-radius: 50%;
   width: 2rem;
@@ -275,13 +319,19 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    border-radius: var(--button-radius);
+  }
+  
+  .menu-icon:hover {
+    background-color: var(--main-green);
   }
 
   .sidebar-body {
-    display: none
+    display: none;
   }
-  main {
 
+  main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto 0.4fr;
     grid-template-areas: 
