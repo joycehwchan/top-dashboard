@@ -297,6 +297,10 @@ footer {
   aspect-ratio: 4/3;
   object-fit: cover;
   object-position: center;
+
+  -webkit-mask-image:-webkit-gradient(linear, right top, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+
 }
 
 
