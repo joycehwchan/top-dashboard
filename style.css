@@ -158,6 +158,7 @@ footer {
   align-items: center;
   gap: .5rem;
   transition: 180ms transform ease-in-out;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -270,7 +271,32 @@ footer {
 
 #challenge, #tips {
   min-height: 200px;
-  /* max-height: 400px; */
+}
+
+#challenge {
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+}
+
+#challenge .card-body {
+  text-align: start;
+  font-size: 0 .8rem;
+  padding: var(--main-padding);
+}
+
+#challenge .card-img {
+  width: 60rem;
+  height: 100%;
+}
+
+#challenge .card-img > img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: center;
 }
 
 
@@ -355,6 +381,17 @@ footer {
   .section-title {
     text-align: center;
   }
+}
+
+
+@media only screen and (max-width:880px){
+  .section1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "title-monitor title-monitor"
+    "calories steps"
+    "workouts sleep";
+  }
 
   .section2 {
     grid-template-columns: 1fr;
@@ -380,18 +417,6 @@ footer {
     width: 2.8rem;
     height: 2.8rem;
   }
-}
-
-
-@media only screen and (max-width:880px){
-  .section1 {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "title-monitor title-monitor"
-    "calories steps"
-    "workouts sleep";
-  }
-
 }
 
 @media only screen and (max-width:480px){
