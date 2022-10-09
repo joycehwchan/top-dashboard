@@ -22,7 +22,7 @@ body {
   display: grid;
   grid-template-columns: minmax(12rem, 1fr) 4fr;
   grid-template-rows: 3.6rem 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "nav      nav"
     "sidebar  main";
 }
@@ -107,7 +107,7 @@ main {
   background: var(--main-green);  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #faffea, #b4f2d2);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #faffea, #b4f2d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
   overflow: auto;
 
   grid-area: main;
@@ -116,7 +116,7 @@ main {
 
   display: grid;
   grid-auto-rows: minmax(min-content, max-content);
-  grid-template-areas: 
+  grid-template-areas:
   "section1"
   "section2"
   "section3"
@@ -173,7 +173,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: 1.6rem 8rem; */
   grid-template-rows: 1.6rem auto;
-  grid-template-areas: 
+  grid-template-areas:
   "title-monitor title-monitor title-monitor title-monitor"
   "calories steps workouts sleep";
   gap: 1rem;
@@ -233,7 +233,7 @@ footer {
   font-size: 2rem;
   font-weight: 200;
   white-space: nowrap;
-  
+
 }
 
 .monitor small {
@@ -247,7 +247,7 @@ footer {
     grid-template-columns: 5fr 3fr;
     /* grid-template-rows: 1.6rem 12rem; */
     grid-template-rows: 1.6rem auto;
-    grid-template-areas: 
+    grid-template-areas:
     "title-challenge title-tips"
     "challenge tips";
     gap: 1rem;
@@ -311,7 +311,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   /* grid-template-rows: 1.6rem 8rem; */
   grid-template-rows: 1.6rem auto;
-  grid-template-areas: 
+  grid-template-areas:
   "title-recipe title-recipe title-recipe title-recipe"
   "recipe1 recipe2 recipe3 recipe4";
   gap: 1rem;
@@ -343,11 +343,12 @@ footer {
 
 /* ========================================= */
 
+/* Desktop */
 @media only screen and (max-width:1080px){
   .container{
     grid-template-columns: 1fr auto;
     grid-template-rows: 3.6rem 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "nav sidebar"
     "main main";
     grid-gap: 0;
@@ -362,7 +363,7 @@ footer {
     cursor: pointer;
     border-radius: var(--button-radius);
   }
-  
+
   .menu-icon:hover {
     background-color: var(--main-green);
   }
@@ -374,7 +375,7 @@ footer {
   main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto 0.4fr;
-    grid-template-areas: 
+    grid-template-areas:
     "section1"
     "section2"
     "section3"
@@ -388,11 +389,11 @@ footer {
   }
 }
 
-
+/* Tablet */
 @media only screen and (max-width:880px){
   .section1 {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "title-monitor title-monitor"
     "calories steps"
     "workouts sleep";
@@ -400,7 +401,7 @@ footer {
 
   .section2 {
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "title-challenge"
     "challenge"
     "title-tips"
@@ -409,7 +410,7 @@ footer {
 
   .section3 {
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "title-recipe"
     "recipe1"
     "recipe2"
@@ -424,14 +425,15 @@ footer {
   }
 }
 
+/* Smartphone */
 @media only screen and (max-width:480px){
   .section1 {
     grid-template-columns: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "title-monitor"
-    "calories" 
+    "calories"
     "steps"
-    "workouts" 
+    "workouts"
     "sleep";
   }
 }
@@ -448,7 +450,7 @@ h2 {
 /* card-titles */
 h3, .card {
   font-size:  0.8rem;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 /* footer */
