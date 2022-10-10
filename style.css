@@ -284,6 +284,7 @@ footer {
   text-align: start;
   font-size: 0 .8rem;
   padding: var(--main-padding);
+  width: 120%;
 }
 
 #challenge .card-img {
