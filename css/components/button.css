@@ -3,7 +3,7 @@
   background-color: var(--main-light-green);
   border: 1px solid var(--main-dark-green);
   border-radius: var(--button-radius);
-  padding: 8px var(--main-padding);
+  padding: var(--button-padding);
 }
 
 .button-primary:hover {
