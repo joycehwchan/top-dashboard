@@ -1,0 +1,92 @@
+/* card-titles */
+h3,
+.card {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: var(--card-radius);
+  box-shadow: rgba(119, 228, 146, 0.2) 0px 8px 24px;
+  min-width: var(--card-min-width);
+  padding: var(--main-padding);
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  transition: 180ms transform ease-in-out;
+  overflow: hidden;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(66, 194, 143, 0.25) 0px 30px 60px -12px,
+    rgba(31, 183, 102, 0.3) 0px 18px 36px -18px;
+  transform: scale(1.02);
+}
+
+.monitor .card-icon {
+  font-size: 1.2rem;
+  color: var(--main-dark-green);
+  background-color: var(--main-light-green);
+  padding: 1rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.monitor-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.monitor-body .card-title {
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.monitor-body .monitor-number {
+  font-size: 2rem;
+  font-weight: 200;
+  white-space: nowrap;
+}
+
+.monitor small {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#challenge,
+#tips {
+  min-height: 200px;
+}
+
+#challenge .card-body {
+  font-size: 0.8rem;
+  text-align: start;
+  padding: var(--main-padding);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+[id^="recipe"] {
+  height: 8rem;
+}
+
+/* Tablet */
+@media only screen and (max-width: 880px) {
+  .monitor > .card-icon {
+    font-size: 1.6rem;
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}

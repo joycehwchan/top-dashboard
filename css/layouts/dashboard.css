@@ -1,0 +1,42 @@
+.container {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) 5fr;
+  grid-template-rows: 3.6rem 1fr;
+  grid-template-areas:
+    "nav      nav"
+    "sidebar  main";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* Desktop */
+@media only screen and (max-width: 1080px) {
+  .container {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 3.6rem 1fr;
+    grid-template-areas:
+      "nav sidebar"
+      "main main";
+    grid-gap: 0;
+  }
+}
