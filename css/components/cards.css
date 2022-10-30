@@ -11,23 +11,32 @@ h3 {
 
 .card {
   flex: 1;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.8)
+  );
   border-radius: var(--card-radius);
   box-shadow: rgba(119, 228, 146, 0.2) 0px 8px 24px;
   min-width: var(--card-min-width);
-  padding: var(--main-padding);
+  padding: 24px 12px;
   cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.5rem;
   transition: 180ms transform ease-in-out;
-  overflow: hidden;
+  border: 1px solid transparent;
 }
 
 .card:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-image: linear-gradient(
+    to top,
+    transparent,
+    rgba(255, 255, 255, 0.8)
+  );
+  border: 1px solid white;
   box-shadow: rgba(66, 194, 143, 0.25) 0px 30px 60px -12px,
     rgba(31, 183, 102, 0.3) 0px 18px 36px -18px;
   transform: scale(1.02);
@@ -36,8 +45,9 @@ h3 {
 /* Monitor */
 
 .card.monitor {
-  height: 8rem;
+  height: 4rem;
   gap: 1rem;
+  align-items: center;
 }
 
 .card.monitor .card-icon {
@@ -51,6 +61,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card:hover .card-icon {
+  background: white;
 }
 
 .monitor-body {
@@ -96,6 +110,7 @@ h3 {
   color: aliceblue;
   text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
   text-align: start;
+  border: none;
 }
 
 .card.challenge p {
@@ -106,6 +121,7 @@ h3 {
 .card.recipe {
   height: 8rem;
   min-height: 120px;
+  align-items: flex-start;
 }
 
 /* Tablet */

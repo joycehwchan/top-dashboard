@@ -9,6 +9,10 @@
     "sidebar  main";
 }
 
+nav {
+  grid-area: nav;
+}
+
 .sidebar {
   grid-area: sidebar;
 }
