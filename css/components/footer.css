@@ -1,6 +1,7 @@
 footer {
   font-size: 0.8rem;
   text-decoration: none;
+  height: fit-content;
 }
 
 footer a,
@@ -13,14 +14,4 @@ footer a:visited {
 footer a:hover {
   opacity: 0.6;
   font-size: 0.85rem;
-}
-
-.fa-github {
-  color: black;
-  position: static;
-  transition: 0.4s ease-in-out;
-}
-
-.fa-github:hover {
-  transform: scale(1.4) rotate(360deg);
 }

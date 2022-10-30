@@ -1,11 +1,16 @@
 /* card-titles */
-h3,
-.card {
+h3 {
   font-size: 0.8rem;
   font-weight: 400;
 }
 
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+
 .card {
+  flex: 1;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: var(--card-radius);
   box-shadow: rgba(119, 228, 146, 0.2) 0px 8px 24px;
@@ -28,7 +33,14 @@ h3,
   transform: scale(1.02);
 }
 
-.monitor .card-icon {
+/* Monitor */
+
+.card.monitor {
+  height: 8rem;
+  gap: 1rem;
+}
+
+.card.monitor .card-icon {
   font-size: 1.2rem;
   color: var(--main-dark-green);
   background-color: var(--main-light-green);
@@ -37,8 +49,8 @@ h3,
   width: 2rem;
   height: 2rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .monitor-body {
@@ -64,29 +76,55 @@ h3,
   font-weight: 500;
 }
 
-#challenge,
-#tips {
+/* Challenge & Tips */
+
+.card.challenge,
+.card.tips {
   min-height: 200px;
 }
 
-#challenge .card-body {
-  font-size: 0.8rem;
-  text-align: start;
-  padding: var(--main-padding);
-  height: 100%;
+.card.challenge {
+  /* background-image: url(../../images/challenge.jpeg); */
+  background-image: linear-gradient(
+      to right,
+      rgba(225, 255, 236, 0.6),
+      rgba(21, 98, 56, 0.7)
+    ),
+    url(../../images/challenge.jpeg);
   background-size: cover;
   background-position: center;
+  color: aliceblue;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+  text-align: start;
 }
 
-[id^="recipe"] {
+.card.challenge p {
+  width: 70%;
+  line-height: 1.4rem;
+}
+
+.card.recipe {
   height: 8rem;
+  min-height: 120px;
 }
 
 /* Tablet */
 @media only screen and (max-width: 880px) {
-  .monitor > .card-icon {
+  .card.monitor .card-icon {
     font-size: 1.6rem;
     width: 2.8rem;
     height: 2.8rem;
+  }
+
+  .card.challenge p {
+    width: 100%;
+    line-height: 1.4rem;
+  }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 480px) {
+  .cards {
+    flex-direction: column;
   }
 }

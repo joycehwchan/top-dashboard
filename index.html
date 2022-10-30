@@ -39,7 +39,7 @@
             <img
               src="https://xsgames.co/randomusers/avatar.php?g=female"
               alt="user profile"
-              class="user-img"
+              class="avatar"
             />
             <div class="user-name">Hazel</div>
           </div>
@@ -82,54 +82,53 @@
 
       <main>
         <div class="section1">
-          <div class="section-title" id="title-monitor">
-            <h2>Daily Monitoring</h2>
-          </div>
-
-          <div class="card monitor" id="calories">
-            <div class="card-icon"><i class="fa-solid fa-burger"></i></div>
-            <div class="monitor-body">
-              <div class="card-title">Calories</div>
-              <div class="monitor-number">1540<small>kcal</small></div>
+          <h2 class="section-title">Daily Monitoring</h2>
+          <div class="cards">
+            <div class="cards-row">
+              <div class="card monitor" id="calories">
+                <div class="card-icon"><i class="fa-solid fa-burger"></i></div>
+                <div class="monitor-body">
+                  <div class="card-title">Calories</div>
+                  <div class="monitor-number">1540<small>kcal</small></div>
+                </div>
+              </div>
+              <div class="card monitor" id="steps">
+                <div class="card-icon">
+                  <i class="fa-solid fa-shoe-prints"></i>
+                </div>
+                <div class="monitor-body">
+                  <div class="card-title">Steps</div>
+                  <div class="monitor-number">8634</div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card monitor" id="steps">
-            <div class="card-icon"><i class="fa-solid fa-shoe-prints"></i></div>
-            <div class="monitor-body">
-              <div class="card-title">Steps</div>
-              <div class="monitor-number">8634</div>
-            </div>
-          </div>
-          <div class="card monitor" id="workouts">
-            <div class="card-icon"><i class="fa-solid fa-dumbbell"></i></div>
-            <div class="monitor-body">
-              <div class="card-title">Workouts</div>
-              <div class="monitor-number">65<small>mins</small></div>
-            </div>
-          </div>
-          <div class="card monitor" id="sleep">
-            <div class="card-icon"><i class="fa-solid fa-moon"></i></div>
-            <div class="monitor-body">
-              <div class="card-title">Sleep</div>
-              <div class="monitor-number">
-                7<small>h </small>40<small>min</small>
+            <div class="cards-row">
+              <div class="card monitor" id="workouts">
+                <div class="card-icon">
+                  <i class="fa-solid fa-dumbbell"></i>
+                </div>
+                <div class="monitor-body">
+                  <div class="card-title">Workouts</div>
+                  <div class="monitor-number">65<small>mins</small></div>
+                </div>
+              </div>
+              <div class="card monitor" id="sleep">
+                <div class="card-icon"><i class="fa-solid fa-moon"></i></div>
+                <div class="monitor-body">
+                  <div class="card-title">Sleep</div>
+                  <div class="monitor-number">
+                    7<small>h </small>40<small>min</small>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="section2">
-          <div class="section-title" id="title-challenge">
-            <h2>Challenge</h2>
-          </div>
-          <div
-            class="card"
-            id="challenge"
-            style="
-              background-image: url(https://source.unsplash.com/-ftWfohtjNw);
-            "
-          >
-            <div class="card-body">
+          <div class="section-challenge">
+            <h2 class="section-title">Challenge</h2>
+            <div class="card challenge">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit Commodi
                 est tempora eos numquam facere error itaque dolor provident.
@@ -137,23 +136,27 @@
                 adipisicing elit Commodi est tempora eos numquam facere error
                 itaque dolor provident. Adipisci, fuga.
               </p>
-              <button class="button-primary">click</button>
             </div>
           </div>
 
-          <div class="section-title" id="title-tips"><h2>Daily Tips</h2></div>
-          <div class="card" id="tips">Tips</div>
+          <div class="section-tips">
+            <h2 class="section-title">Daily Tips</h2>
+            <div class="card tips">Tips</div>
+          </div>
         </div>
 
         <div class="section3">
-          <div class="section-title" id="title-recipe">
-            <h2>Your Recipes</h2>
+          <h2 class="section-title">Your Recipes</h2>
+          <div class="cards">
+            <div class="cards-row">
+              <div class="card recipe">Recipe1</div>
+              <div class="card recipe">Recipe2</div>
+            </div>
+            <div class="cards-row">
+              <div class="card recipe">Recipe3</div>
+              <div class="card recipe">Recipe4</div>
+            </div>
           </div>
-
-          <div class="card" id="recipe1">Recipe1</div>
-          <div class="card" id="recipe2">Recipe2</div>
-          <div class="card" id="recipe3">Recipe3</div>
-          <div class="card" id="recipe4">Recipe4</div>
         </div>
         <footer>
           <span>Made By: </span>

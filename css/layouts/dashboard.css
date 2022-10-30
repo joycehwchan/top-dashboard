@@ -13,6 +13,10 @@
   grid-area: sidebar;
 }
 
+main {
+  grid-area: main;
+}
+
 .section1 {
   grid-area: section1;
 }
@@ -23,10 +27,6 @@
 
 .section3 {
   grid-area: section3;
-}
-
-footer {
-  grid-area: footer;
 }
 
 /* Desktop */
