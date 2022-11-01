@@ -1,6 +1,6 @@
 main {
   /* background-color: #e0f3e7; */
-  background: var(--main-green); /* fallback for old browsers */
+  background: var(--main-ligh-green); /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
     #faffea,

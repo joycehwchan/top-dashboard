@@ -10,19 +10,12 @@
 @import url(components/footer.css);
 
 :root {
-  --main-padding: 12px;
-  --main-radius: 24px;
-  --card-radius: 12px;
-  --button-radius: 8px;
-  --button-padding: 8px 24px;
-  --card-min-width: 10rem;
-  --main-green: #a1ffce;
-  --main-dark-green: #1ca15d;
+  --main-dark-green: #309a39;
   --main-light-green: #d2ffe8;
 }
 
 body {
   background-color: white;
-  color: rgb(33, 49, 39);
+  color: rgb(38, 46, 41);
   font-family: "Quicksand", sans-serif;
 }

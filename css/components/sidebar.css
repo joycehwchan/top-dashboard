@@ -1,6 +1,6 @@
 .sidebar {
   background-color: white;
-  padding: var(--main-padding);
+  padding: 12px;
 }
 
 .sidebar .divider {
@@ -15,6 +15,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.04rem;
   text-transform: uppercase;
+  opacity: 0.6;
   margin-top: 2rem;
   margin-bottom: 0.4rem;
 }
@@ -31,15 +32,19 @@
 
 .siderbar-nav {
   cursor: pointer;
-  width: 100%;
+  width: fit-content;
   text-align: start;
   padding: 8px 0;
+  padding-right: 1.2rem;
   border-radius: 8px;
+  transition: transform 200ms;
 }
 
 .siderbar-nav:hover {
   color: var(--main-dark-green);
+  transform: scale(1.04);
   background-color: rgb(244, 255, 228);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .siderbar-nav i {
@@ -76,11 +81,11 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    border-radius: var(--button-radius);
+    border-radius: 8px;
   }
 
   .menu-icon:hover {
-    background-color: var(--main-green);
+    background-color: var(--main-light-green);
   }
 
   .sidebar-body {

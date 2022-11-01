@@ -16,9 +16,9 @@ h3 {
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.8)
   );
-  border-radius: var(--card-radius);
+  border-radius: 12px;
   box-shadow: rgba(119, 228, 146, 0.2) 0px 8px 24px;
-  min-width: var(--card-min-width);
+  min-width: 10rem;
   padding: 24px 12px;
   cursor: pointer;
   display: flex;
@@ -61,10 +61,13 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1.8px solid white;
+  box-shadow: rgba(50, 50, 93, 0.08) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.02) 0px 18px 36px -18px inset;
 }
 
 .card:hover .card-icon {
-  background: white;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
 .monitor-body {
