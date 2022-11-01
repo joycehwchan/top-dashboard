@@ -10,12 +10,14 @@
 @import url(components/footer.css);
 
 :root {
-  --main-dark-green: #309a39;
-  --main-light-green: #d2ffe8;
+  --main-dark-green: rgb(48, 153, 57);
+  --main-light-green: rgb(210, 255, 232);
+  --hover-shadow: rgba(66, 194, 143, 0.25) 0px 30px 60px -12px,
+                  rgba(31, 183, 102, 0.2) 0px 18px 36px -18px;
 }
 
 body {
   background-color: white;
-  color: rgb(38, 46, 41);
+  color: rgba(30, 60, 50, 0.9);
   font-family: "Quicksand", sans-serif;
 }

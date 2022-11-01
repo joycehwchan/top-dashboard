@@ -1,6 +1,6 @@
 main {
   /* background-color: #e0f3e7; */
-  background: var(--main-ligh-green); /* fallback for old browsers */
+  background: var(--main-green); /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
     #faffea,
@@ -11,6 +11,8 @@ main {
     #faffea,
     #b4f2d2
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background-image: linear-gradient(to bottom, #1b3152, #005f7f, #009094, #57be91, #c3e587); */
 
   border-top-left-radius: 16px;
   padding: 1.6rem 2.8rem 1.2rem 2rem;
